@@ -11,7 +11,7 @@ galleryItems.forEach((image) => {
   listGallery.append(imageList);
   imageList.insertAdjacentHTML(
     "beforeend",
-    `<a class="gallery__link"><img class="gallery__image" src=${image.original} alt=${image.description}></></a>`
+    `<a class="gallery__link"><img class="gallery__image" src=${image.preview} alt=${image.description}></></a>`
   );
 
   imageList.addEventListener("click", (event) => {
